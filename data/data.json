@@ -1,0 +1,61 @@
+{
+    "airports": {
+        "AAA": {
+            "label": "Airport San Francisco",
+            "city": "San Francisco",
+            "country": "USA",
+            "longitude": -122.379,
+            "latitude": 37.621
+        },
+        "BBB": {
+            "label": "Airport NYC",
+            "city": "New York City",
+            "country": "USA",
+            "longitude": -74.006,
+            "latitude": 40.7128
+        },
+        "CCC": {
+            "label": "Airport Tokyo",
+            "city": "Tokyo",
+            "country": "Japan",
+            "longitude": 139.6917,
+            "latitude": 35.6895
+        },
+        "DDD": {
+            "label": "Airport Paris",
+            "city": "Paris",
+            "country": "France",
+            "longitude": 2.3522,
+            "latitude": 48.8566
+        }
+    },
+    "connections": {
+        "AAA": {
+            "BBB": {
+                "flight_duration_minutes": 12000,
+                "flight_cost_cents": 10
+            },
+            "CCC": {
+                "flight_duration_minutes": 12000,
+                "flight_cost_cents": 12
+            }
+        },
+        "BBB": {
+            "CCC": {
+                "flight_duration_minutes": 12000,
+                "flight_cost_cents": 8
+            },
+            "DDD": {
+                "flight_duration_minutes": 12000,
+                "flight_cost_cents": 2
+            }
+        },
+        "CCC": {
+            "DDD": {
+                "flight_duration_minutes": 12000,
+                "flight_cost_cents": 1
+            }
+        },
+        "DDD": {}
+    }
+}
